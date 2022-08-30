@@ -29,12 +29,6 @@ final class ExampleController: UIViewController {
         customView.scrollView.delegate = self
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
-    private func showImage(_ show: Bool) {
-        UIView.animate(withDuration: 0.2) {
-            self.customView.imageView.alpha = show ? 1.0 : 0.0
-        }
-    }
 
     private func moveAndResizeImage(for height: CGFloat) {
         let coeff: CGFloat = {
